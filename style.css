@@ -5,6 +5,7 @@ body {
     background-image: radial-gradient(#f3daff 1.5px, transparent 1.5px);
     background-size: 23px 23px;
     background-color: #ffffff;
+    text-align: center;
 }
 
 html, body {
@@ -173,4 +174,37 @@ header .yolo1:hover {
 
 .name, .jobp {
   color: rgb(223, 157, 168);
+}
+
+.comment {
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 20px 24px 20px 4px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 93, 201, 0.1), 
+    rgba(253, 91, 191, 0.07)
+  );
+  border: 1px solid rgba(97, 218, 251, 0.125);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.comment-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px; 
+  height: 100%;
+  border-radius: 9999px;
+  background-color: #ff92d5;
+}
+
+.comment-text {
+  color: #ce35b4; /* text-gray-700 */
+  line-height: 1;
+  padding-left: 12px;
+  font-size: large;
 }
