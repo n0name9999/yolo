@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    background-image: radial-gradient(#f3daff 1.5px, transparent 1.5px);
+    background-size: 23px 23px;
+    background-color: #ffffff;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #ec94ec;
+    justify-content: center;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    height: 9%;
+    border-radius: 15px;
+}
+
+header .yolo1 {
+    height: 180%;
+    width: auto;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+header .yolo1:hover {
+    height: 210%;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    color: #ec94ec;
+    font-family: "Fredoka", sans-serif;
+}
+
+.h3 {
+    text-align: center;
+    font-family: "Mali", sans-serif;
+    font-size: 25px;
+    color: #f8a4d2;
+}
+
+.about {
+    text-align: center;
+    font-size: 16px;
+    color: #a1557f;
+    padding: 15px;
+}
+
+.invite {
+  outline: none;
+  color: #b152a9;
+  padding: 0.7em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  border: 2.2px dashed #b152a9;
+  border-radius: 15px;
+  background-color: #ffcef9;
+  transition: .1s ease-in-out, .4s color;
+  font-size: 20px;
+  font-family: "Mali", sans-serif;
+  font-weight: 900;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+#team {
+    margin-top: 125px;
+}
+
+.team {
+   background: 
+      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#ffeafc 54% 57%,#0000 59%) 0 calc(128px/2),
+      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#ffeafc 54% 57%,#0000 59%) calc(128px/2) 0,
+      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#ffeafc 54% 57%,#0000 59%),
+      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#ffeafc 54% 57%,#0000 59%),
+      #f9f9f9;
+   background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+
+   border: 3px dashed pink;
+   width: 335px;
+   height: 435px;
+   border-radius: 25px;
+   margin: 30px auto;
+   display: block;
+   object-fit: cover;
+   place-content: center;
+}
+
+@media (min-width: 768px) {
+  .team {
+    width: 450px;
+    height: 550px;
+  }
+}
+
+.profile {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border: 5px solid pink;
+    display: block;
+    margin: 15px auto;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: -23px;
+}
+
+.jobp {
+    text-align: center;
+}
+
+.viewpf {
+  padding: 0.7em 3.2em;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #dda3ad;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #dda3ad;
+  display: block;
+  margin: 30px auto;
+}
+
+.viewpf:hover {
+  color: #dda3ad;
+  transform: scale(1.1);
+  outline: 2px solid #dda3ad;
+  box-shadow: 4px 5px 17px -4px #dda3ad;
+}
+
+.viewpf::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f8cdf4;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.viewpf:hover::before {
+  width: 250%;
+}
+
+.name, .jobp {
+  color: rgb(223, 157, 168);
+}
